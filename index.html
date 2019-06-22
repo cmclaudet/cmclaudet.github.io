@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<script src="script.js"></script>
+<head>
+	<meta charset="utf-8">
+    <title>Catherine Claudet.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1 class="header-logo">cmclaudet</h1>
+		<nav>
+			<ul class="header-menu">
+				<li class="header-menu__item"><a href="#work" class="header-menu__item__link">Work</a></li>
+				<li class="header-menu__item"><a href="#about" class="header-menu__item__link">About</a></li>
+				<li class="header-menu__item"><a href="#footer" class="header-menu__item__link">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="info-section">
+			<img src="images/profile.jpg" alt="catherineclaudet" class="info-section__profile-image">
+			<h1>Catherine Claudet</h1>
+			<p class="info-section__description info-section__description-profile">Software developer with specialties in mobile apps, game development and front end web development</p>
+		</section>
+		<section id="work">
+			<h2>Work</h2>
+			<div class="portfolio">
+				<div class="portfolio__item" id="portfolio-wisp-child" onclick="previewWispChildWindow()" role="button">
+					<h3>Wisp Child</h3>
+				</div>
+				<div class="portfolio__item" id="portfolio-bugbury" onclick="previewBugburyWindow()" role="button">
+					<h3>Bugbury</h3>
+				</div>
+				<div class="portfolio__item" id="portfolio-am-fight" onclick="previewAstromundusFight()" role="button">
+					<h3>Astromundus Fight</h3>
+				</div>
+				<div class="portfolio__item" id="portfolio-cloud-10" onclick="previewCloud10()" role="button">
+					<h3>Cloud 10</h3>
+				</div>
+				<div class="portfolio__item" id="portfolio-swipe-theft" onclick="previewSwipeTheft()" role="button">
+					<h3>Swipe Theft</h3>
+				</div>
+				<div class="portfolio__item" id="portfolio-unity-meetup" onclick="previewUnityMeetup()" role="button">
+					<h3>Unity Berlin Meetup</h3>
+				</div>
+			</div>
+		</section>
+		<section class="info-section" id="about">
+			<h2>About Me</h2>
+			<p class="info-section__description info-section__description-about">
+				I started off by studying physics back in 2012 in London. During that time, I took an interest in game development after doing an internship which exposed me to a bit of <a href="https://unity.com">Unity</a>, a game engine. I eventually began making mobile games with Unity in my spare time. By day I work full time as a software developer with Unity, and by night I build my own games.
+			</p>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-links" id="footer">
+			<a href="mailto:cmclaudet@gmail.com?Subject=Hello"><img class="footer-links__images" src="images/email-icon.png" alt="email-icon" height="60" width="60"></a>
+			<a href="https://www.linkedin.com/in/catherine-claudet-63507ab0/"><img class="footer-links__images" src="images/linkedin-logo.png" alt="linkedin-logo" height="60" width="60"></a>
+			<a href="https://github.com/cmclaudet"><img class="footer-links__images" src="images/github-logo.png" alt="github-logo" height="60" width="60"></a>
+			<a href="https://twitter.com/cmclaudet"><img class="footer-links__images" src="images/twitter-logo.png" alt="twitter-logo" height="60" width="60"></a>
+		</div>
+	</footer>
+	<div id="preview-background" onclick="exitPreviewWindow()"></div>
+	<div id="preview-wisp-child" class="preview-window">
+		<img class="preview-window__back-button" src="images/cross.png" alt="back" width="25" height="25" onclick="exitPreviewWindow()">
+		<div class="preview-window__image-container"><img class="preview-window__image" src="images/wisp-child.png" alt="wisp-child"></div>
+		<p class="preview-window__description"><a href="https://beastgamestudios.itch.io/wisp-child">Wisp Child</a> is a story driven adventure game about a young alchemist whose curiosity causes a series of devastating events to happen to the nearby village. It was made with Unity and developed by a team of 3 people: me, <a href="www.emilyclaudet.com">Emily Claudet</a>, and <a href="https://www.linkedin.com/in/chris-claudet-020478109/">Christopher Claudet</a>.</p>
+	</div>
+	<div id="preview-bugbury" class="preview-window">
+		<img class="preview-window__back-button" src="images/cross.png" alt="back" width="25" height="25" onclick="exitPreviewWindow()">
+		<div class="preview-window__image-container"><img class="preview-window__image" src="images/bugbury-title-crop.png" alt="bugbury"></div>
+		<p class="preview-window__description"><a href="https://play.google.com/store/apps/details?id=com.cmclaudet.Bugbury&hl=en_US">Bugbury</a> is a 2D action game for Android made with Unity. It was a solo project that I developed in 2017.</p>
+	</div>
+	<div id="preview-astromundus-fight" class="preview-window">
+		<img class="preview-window__back-button" src="images/cross.png" alt="back" width="25" height="25" onclick="exitPreviewWindow()">
+		<div class="preview-window__image-container"><img class="preview-window__image" src="images/astromundus-fight.png" alt="astromundus-fight"></div>
+		<p class="preview-window__description"><a href="https://cmclaudet.github.io/AstromundusFight/">Astromundus Fight</a> is a 2D fighting game for OSX and Windows made with <a href="https://love2d.org/">Love 2D</a>. It is the first game I developed and was a solo project.</p>
+	</div>
+	<div id="preview-cloud-10" class="preview-window">
+		<img class="preview-window__back-button" src="images/cross.png" alt="back" width="25" height="25" onclick="exitPreviewWindow()">
+		<div class="preview-window__image-container"><img class="preview-window__image" src="images/cloud-10-title.png" alt="cloud-10"></div>
+		<p class="preview-window__description"><a href="https://cmclaudet.github.io/Cloud10/">Cloud 10</a> is a simple and fun game where the player has to collect clouds to get to 10. It was the first game I developed with Unity.</p>
+	</div>
+	<div id="preview-swipe-theft" class="preview-window">
+		<img class="preview-window__back-button" src="images/cross.png" alt="back" width="25" height="25" onclick="exitPreviewWindow()">
+		<div class="preview-window__image-container"><img class="preview-window__image" src="images/swipe-theft-date.png" alt="swipe-theft"></div>
+		<p class="preview-window__description"><a href="https://globalgamejam.org/2019/games/swipe-theft">Swipe Theft</a> was made during the 2019 Global Game Jam based in Berlin. It was made by a 7 person team with Unity and features a Berliner eager to furnish their new apartment.</p>
+	</div>
+	<div id="preview-unity-meetup" class="preview-window">
+		<img class="preview-window__back-button" src="images/cross.png" alt="back" width="25" height="25" onclick="exitPreviewWindow()">
+		<div class="preview-window__image-container"><img class="preview-window__image" src="images/unity-meetup-02.jpg" alt="unity-meetup"></div>
+		<p class="preview-window__description"><a href="https://www.meetup.com/Unity-3D-Berlin/">Unity 3D Berlin</a> is a meetup group I began organizing in April 2017. The purpose of the meetup is to connect people who are interested in Unity.</p>
+	</div>
+</body>
+</html>
